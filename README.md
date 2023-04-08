@@ -17,6 +17,7 @@ Start the server by running npm run start in the root directory.
 Navigate to http://localhost:3000 in your browser to view the application.
 
 # Features
+
 This financial dashboard includes the following features:
 
 Authentication and authorization with JWT tokens
