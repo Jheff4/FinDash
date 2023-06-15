@@ -33,6 +33,8 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import FlexBetween from './FlexBetween';
 import profileImage from "../assets/profile.jpeg";
+import { autoBatchEnhancer } from '@reduxjs/toolkit';
+
 
 const navItems = [
   {
@@ -110,7 +112,7 @@ const Sidebar = ({
   }, [pathname])
 
   return (
-    <Box component="nav">
+    <Box component="nav" >
       {isSidebarOpen && (
         <Drawer
           open={isSidebarOpen}
@@ -158,7 +160,7 @@ const Sidebar = ({
                   <ListItem key={text} disablePadding>
                     <ListItemButton
                       onClick={() => {
-                        navigate(`/${lcText}`);
+                        // navigate(`/${lcText}`);
                         setActive(lcText)
                       }}
                       sx={{

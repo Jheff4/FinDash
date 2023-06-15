@@ -8,3 +8,20 @@ body,
   width: 100%;
   font-family: "Inter", sans-serif;
 }
+
+/* html {
+  scrollbar-width: normal;
+  scrollbar-color: red;
+} */
+
+::-webkit-scrollbar {
+  width: 0vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
