@@ -13,10 +13,10 @@ import { setMode } from '../../src/state';
 import profileImage from "../assets/profile.jpeg";
 import { AppBar, IconButton, InputBase, Toolbar, useTheme } from '@mui/material';
 
-const Navbar = (
+const Navbar = ({
   isSidebarOpen,
   setIsSidebarOpen
-) => {
+}) => {
   const dispatch = useDispatch();
   const theme = useTheme();
 
