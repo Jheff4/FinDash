@@ -9,6 +9,7 @@ import clientRoutes from "./routes/client.js";
 import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
+import User from './models/User.js';
 
 // CONFIGURATION 
 
@@ -57,5 +58,8 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server Running on Port ${PORT}`))
+
+    // ONLY ADD DATA ONE TIME
+    User.insertMany(dataUser);
   })
   .catch((err) => console.log(`${err} did not connect`));
